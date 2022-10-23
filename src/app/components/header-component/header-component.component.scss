@@ -1,0 +1,22 @@
+.ctn-header{
+    width: 100%;
+    padding: 1%;
+    background-color: #2356f0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    .ctn-options{
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        margin-left: auto;
+        .title{
+            font-size: 15px;
+            color: #ffff;  
+            font-family: cursive;  
+            font-weight: 600;       
+            }
+
+    }
+}

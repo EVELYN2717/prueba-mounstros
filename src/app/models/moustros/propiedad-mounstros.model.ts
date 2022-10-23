@@ -1,0 +1,32 @@
+export interface MonstersProperties {
+    index:                  string;
+    name:                   string;
+    size:                   string;
+    type:                   string;
+    subtype:                string;
+    alignment:              string;
+    armor_class:            number;
+    hit_points:             number;
+    hit_dice:               string;
+    hit_points_roll:        string;
+    speed:                  any;
+    strength:               number;
+    dexterity:              number;
+    constitution:           number;
+    intelligence:           number;
+    wisdom:                 number;
+    charisma:               number;
+    proficiencies:          any[];
+    damage_vulnerabilities: any[];
+    damage_resistances:     any[];
+    damage_immunities:      any[];
+    condition_immunities:   any[];
+    senses:                 any;
+    languages:              string;
+    challenge_rating:       number;
+    xp:                     number;
+    special_abilities:      any[];
+    actions:                any[];
+    url:                    string;
+    legendary_actions:      any[];
+}

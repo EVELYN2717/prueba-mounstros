@@ -1,0 +1,17 @@
+.ctn-page{
+    display: flex;
+    justify-content: center;
+    .ctn-body{
+        height: 500px;
+        position: absolute;
+        top: 10%; 
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 710px;
+        .ctn-monster{
+            &:nth-of-type(even){
+                margin: 0 45px;
+            }
+        }
+    }
+}

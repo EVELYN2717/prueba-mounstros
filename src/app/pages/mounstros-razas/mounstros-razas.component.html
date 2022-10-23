@@ -1,0 +1,9 @@
+<div class="ctn-page">
+    <app-header-component></app-header-component>
+    <div class="ctn-body">
+        <div class="ctn-monster" *ngFor="let monster of monsters">
+            <app-card-component [monster]="monster" (monsterSelectedEvent)="getMonsterProperties($event)"></app-card-component>
+        </div>
+    </div>
+    <app-footer-component></app-footer-component>
+</div>
