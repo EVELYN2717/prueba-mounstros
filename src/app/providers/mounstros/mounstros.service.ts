@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { MonstersProperties } from 'src/app/models/moustros/propiedad-mounstros.model';
+import { MonstersPropertiesModel } from 'src/app/models/moustros/propiedad-mounstros.model';
 import { ListMonstersModel } from 'src/app/models/moustros/listMonsters.model';
 
 
@@ -17,8 +17,8 @@ export class MounstrosService {
     return this.http.get<ListMonstersModel>(endpoint);
   }
 
-  public getMonsterProperties(monsterIndex: string){
-    const endpoint = `${environment.propmoEndpoint}/${monsterIndex}`
-    return this.http.get<MonstersProperties>(endpoint);
+  getMonsterProperties(monsterIndex: string){
+    const endpoint = `${environment.mouEndpoint}/${monsterIndex}`
+    return this.http.get<MonstersPropertiesModel>(endpoint);      
   }
 }

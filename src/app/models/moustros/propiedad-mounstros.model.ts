@@ -1,4 +1,4 @@
-export interface MonstersProperties {
+export interface MonstersPropertiesModel {
     index:                  string;
     name:                   string;
     size:                   string;

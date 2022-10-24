@@ -7,11 +7,6 @@
         top: 10%; 
         display: flex;
         flex-wrap: wrap;
-        max-width: 710px;
-        .ctn-monster{
-            &:nth-of-type(even){
-                margin: 0 45px;
-            }
-        }
+        max-width: 264px;
     }
 }

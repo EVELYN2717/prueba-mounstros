@@ -1,1 +1,29 @@
-<p>card-component-razas works!</p>
+<div class="card"> 
+    <div class="card-body-razas">
+        <div class="ctn-buttons">
+            <div class="ctn-b1" (click)="showProperties(raceChild.index)">
+                <button>{{raceChild.name | uppercase}}</button>
+                <div class="ctn-properties" *ngIf="showRaceProp">
+                   <div class="ctn-prop1">
+                        <p>Name <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.name}}" size="10px"></p>         
+                        <p>Speed <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.speed}}" size="10px"></p>
+                        <p>Aligment <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.alignment}}" size="10px"></p>
+                        <p>Age <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.age}}" size="10px"></p>
+                   </div>
+                   <div class="ctn-prop2">
+                        <p>Size  <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.size}}" size="2px"></p> 
+                        <p>SD  <input type="text" class="textBox" disabled="true"placeholder="{{racePropertie.size_description}}" size="2px"></p>
+                        <p>LD <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.language_desc}}" size="2px"></p>
+                        <p>AB <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.ability_bonuses[0].name}}" size="2px"></p>
+                   </div>
+                   <div class="ctn-prop3">
+                        <p>Language <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.languages[0].name}}" size="2px"></p>
+                        <p>Traits <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.traits[0].name}}" size="2px"></p>
+                        <p>Subraces <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.ability_bonuses[0].name}}" size="2px"></p>
+                        <p>SP <input type="text" class="textBox" disabled="true" placeholder="{{racePropertie.ability_bonuses[0].name}}" size="2px"></p>
+                   </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

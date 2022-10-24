@@ -1,8 +1,28 @@
 <div class="card"> 
     <div class="card-body-mounstros">
         <div class="ctn-buttons">
-            <div class="ctn-b1">
-                <button (click)="showProperties(monster.index)">{{monster.name}}</button>
+            <div class="ctn-b1" (click)="showProperties(monsterChild.index)">
+                <button>{{monsterChild.name | uppercase}}</button>
+                <div class="ctn-properties" *ngIf="showMonsterProp">
+                   <div class="ctn-prop1">
+                        <p>Type <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.type}}" size="10px"></p>         
+                        <p>SubT <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.subtype}}" size="10px"></p>
+                        <p>Size <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.size}}" size="10px"></p>
+                        <p>Alig <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.alignment}}" size="10px"></p>
+                   </div>
+                   <div class="ctn-prop2">
+                        <p>HP  <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.hit_points}}" size="2px"></p> 
+                        <p>CA  <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.armor_class}}" size="2px"></p>
+                        <p>Str <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.strength}}" size="2px"></p>
+                        <p>Dex <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.dexterity}}" size="2px"></p>
+                   </div>
+                   <div class="ctn-prop3">
+                        <p>Con <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.constitution}}" size="2px"></p>
+                        <p>Int <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.intelligence}}" size="2px"></p>
+                        <p>Wis <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.wisdom}}" size="2px"></p>
+                        <p>Cha <input type="text" class="textBox" disabled="true" placeholder="{{monsterPropertie.charisma}}" size="2px"></p>
+                   </div>
+                </div>
             </div>            
         </div>
     </div>

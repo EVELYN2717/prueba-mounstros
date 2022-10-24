@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   mouEndpoint: 'https://www.dnd5eapi.co/api/monsters',
-  propmoEndpoint: 'https://www.dnd5eapi.co/api/monsters/doppelganger'
+  racEndpoint: 'https://www.dnd5eapi.co/api/races'
 };
 
 /*

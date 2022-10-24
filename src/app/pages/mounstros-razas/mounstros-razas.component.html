@@ -1,8 +1,14 @@
 <div class="ctn-page">
-    <app-header-component></app-header-component>
-    <div class="ctn-body">
-        <div class="ctn-monster" *ngFor="let monster of monsters">
-            <app-card-component [monster]="monster" (monsterSelectedEvent)="getMonsterProperties($event)"></app-card-component>
+    <app-header-component (showMonstersEvent)="showMonstersEvent($event)" 
+                          (showRacesEvent)="showRacesEvent($event)"></app-header-component>
+    <div class="ctn-body" *ngIf="showMonsters">
+        <div *ngFor="let monster of monsters">
+            <app-card-component [monsterChild]="monster"></app-card-component>
+        </div>
+    </div>
+    <div class="ctn-body" *ngIf="showRaces">
+        <div *ngFor="let race of races">
+            <app-card-component-razas [raceChild]="race"></app-card-component-razas>
         </div>
     </div>
     <app-footer-component></app-footer-component>
